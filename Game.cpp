@@ -45,16 +45,15 @@ void Game::initBox() {
 }
 
 void Game::initWorld() {
-    this->worldBackgroundTex.loadFromFile("C:/Users/Juan David/Desktop/visitaVirtual/Textures/background2.png");
+    this->worldBackgroundTex.loadFromFile("C:/Users/Juan David/Desktop/visitaVirtual/Textures/background3.png");
     this->worldBackground.setTexture(this->worldBackgroundTex);
 }
 
 void Game::initSecurityGuard() {
-    this->characterTexture.loadFromFile("C:/Users/Juan David/Desktop/visitaVirtual/Textures/Seguridad.png");
+    this->characterTexture.loadFromFile("C:/Users/Juan David/Desktop/visitaVirtual/Textures/officer.png");
     this->securityGuard.setTexture(this->characterTexture);
 
-    this->securityGuard.setPosition(-250.f, -11.f);
-    this->securityGuard.setScale(30.f,30.f);
+    this->securityGuard.setPosition(1400, 195);
 }
 
 
