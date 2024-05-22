@@ -1,0 +1,27 @@
+# ninja log v5
+15	1584	7379673636794924	CMakeFiles/visitaVirtual.dir/main.cpp.obj	f122ed93185b5da5
+1485	2747	7379676881583754	visitaVirtual.exe	b8e1020adfa60b4e
+8	1484	7379676869067813	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+5	1599	7379677006835144	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1600	2944	7379677020160831	visitaVirtual.exe	b8e1020adfa60b4e
+5	1675	7379677227527083	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1677	2977	7379677240503065	visitaVirtual.exe	b8e1020adfa60b4e
+7	1622	7379677352771298	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1625	2957	7379677365977095	visitaVirtual.exe	b8e1020adfa60b4e
+6	1741	7379677472760837	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1742	3024	7379677485516972	visitaVirtual.exe	b8e1020adfa60b4e
+6	1801	7379677558229686	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1802	3137	7379677571485385	visitaVirtual.exe	b8e1020adfa60b4e
+7	1621	7379677666044709	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1622	2881	7379677678496706	visitaVirtual.exe	b8e1020adfa60b4e
+6	1438	7379677811556133	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1439	2680	7379677823856123	visitaVirtual.exe	b8e1020adfa60b4e
+5	1657	7379678016548668	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1658	2946	7379678029295745	visitaVirtual.exe	b8e1020adfa60b4e
+14	1432	7379678952895464	CMakeFiles/visitaVirtual.dir/main.cpp.obj	f122ed93185b5da5
+6	1528	7379678953855160	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1529	2787	7379678966341115	visitaVirtual.exe	b8e1020adfa60b4e
+5	1068	7379679385573952	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1069	2111	7379679395910604	visitaVirtual.exe	b8e1020adfa60b4e
+10	1921	7379683839837091	CMakeFiles/visitaVirtual.dir/Game.cpp.obj	e3dcfbfe7d033584
+1922	3300	7379683853527887	visitaVirtual.exe	b8e1020adfa60b4e
