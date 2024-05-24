@@ -1,4 +1,6 @@
 #include "Game.h"
+#include <vector>
+#include <unistd.h>
 
 //Private functions
 void Game::initVariables() {
@@ -83,6 +85,9 @@ Game::Game() {
     this->initFonts();
     this->initText();
     this->initBox();
+
+    this->currentCharIndex = 0;
+    this->charDisplayInterval = 0.05f;
 }
 Game::~Game() {
     delete this->window;
@@ -128,8 +133,13 @@ void Game::update() {
 }
 
 void Game::updateText() {
-
-    this->uiText.setString(this->securityDialog);
+    if (this->currentCharIndex < this->securityDialog.size()) {
+        if (this->textUpdateClock.getElapsedTime().asSeconds() >= this->charDisplayInterval) {
+            this->uiText.setString(this->securityDialog.substr(0, this->currentCharIndex + 1));
+            this->currentCharIndex++;
+            this->textUpdateClock.restart();
+        }
+    }
 }
 
 void Game::renderText(sf::RenderTarget& target) {

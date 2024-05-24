@@ -2,6 +2,7 @@
 #define VISITAVIRTUAL_GAME_H
 
 #include "iostream"
+
 #include "SFML/Graphics.hpp"
 #include "SFML/System.hpp"
 #include "SFML/Window.hpp"
@@ -18,8 +19,12 @@ private:
     //Variables
     //Window
     sf::RenderWindow* window;
-    //sf::VideoMode videoMode;
     sf::Event ev;
+
+    //Timing
+    sf::Clock textUpdateClock;
+    std::size_t currentCharIndex;
+    float charDisplayInterval;
 
     //Mouse positions
     sf::Vector2i mousePosWindow;
