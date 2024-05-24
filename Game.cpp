@@ -1,5 +1,4 @@
 #include "Game.h"
-#include "filesystem"
 
 //Private functions
 void Game::initVariables() {
@@ -22,13 +21,13 @@ void Game::initTextures() {
 
 
 void Game::initFonts() {
-    if(!this->font.loadFromFile("C:/Users/Juan David/Desktop/visitaVirtual/Fonts/Pearce.ttf")){
+    if(!this->font.loadFromFile("C:/Users/Usuario/Desktop/visita_virtual/Fonts/Pearce.ttf")){
         std::cout << "ERROR::GAME::INITFONTS::failed to load font!" << "\n";
     }
 }
 
 void Game::initText() {
-    this->uiText.setPosition(40.f, 800.f);
+    this->uiText.setPosition(35.f, 490.f);
     this->uiText.setFont(this->font);
     this->uiText.setCharacterSize(30);
     this->uiText.setFillColor(sf::Color(86, 86, 86));
@@ -36,24 +35,33 @@ void Game::initText() {
 }
 
 void Game::initBox() {
-    this->box.setPosition(30.f, 800.f);
+    this->box.setPosition(30.f, 490.f);
 
-    this->box.setSize(sf::Vector2f(1855.f, 250.f));
+    this->box.setSize(sf::Vector2f(1300.f, 250.f));
     this->box.setFillColor(sf::Color(204, 204, 204, 180));
     this->box.setOutlineColor(sf::Color(102, 102, 102));
     this->box.setOutlineThickness(6.f);
 }
 
 void Game::initWorld() {
-    this->worldBackgroundTex.loadFromFile("C:/Users/Juan David/Desktop/visitaVirtual/Textures/background3.png");
+
+    this->worldBackgroundTex.loadFromFile("C:/Users/Usuario/Desktop/visita_virtual/Textures/background4.jpg");
     this->worldBackground.setTexture(this->worldBackgroundTex);
+
+    sf::Vector2<unsigned int> windowSize = this->window->getSize();
+    sf::Vector2<unsigned int> textureSize = this->worldBackgroundTex.getSize();
+
+    float scaleX = (float) windowSize.x / textureSize.x;
+    float scaleY = (float) windowSize.y / textureSize.y;
+
+    this->worldBackground.scale(scaleX, scaleY);
 }
 
 void Game::initSecurityGuard() {
-    this->characterTexture.loadFromFile("C:/Users/Juan David/Desktop/visitaVirtual/Textures/officer.png");
+    this->characterTexture.loadFromFile("C:/Users/Usuario/Desktop/visita_virtual/Textures/officer.png");
     this->securityGuard.setTexture(this->characterTexture);
 
-    this->securityGuard.setPosition(1400, 195);
+    this->securityGuard.setPosition(850, 30);
 }
 
 
