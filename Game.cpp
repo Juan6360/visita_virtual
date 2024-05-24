@@ -63,10 +63,14 @@ void Game::initWorld() {
 }
 
 void Game::initSecurityGuard() {
+
+    sf::Vector2<unsigned int> windowSize = this->window->getSize();
+    sf::Vector2<unsigned int> textureSize = this->worldBackgroundTex.getSize();
+
     this->characterTexture.loadFromFile("C:/Users/Juan David/Desktop/visita_virtual/Textures/officer.png");
     this->securityGuard.setTexture(this->characterTexture);
 
-    this->securityGuard.setPosition(850, 30);
+    this->securityGuard.setPosition((3 * (float) windowSize.x/4), 80 + ((float) (windowSize.y - textureSize.y)));
 }
 
 
