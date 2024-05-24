@@ -1,0 +1,3 @@
+"C:\Program Files\JetBrains\CLion 2023.3.4\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\visitaVirtual.dir/objects.a
+C:\mingw64\bin\ar.exe qc CMakeFiles\visitaVirtual.dir/objects.a @CMakeFiles\visitaVirtual.dir\objects1.rsp
+C:\mingw64\bin\c++.exe -g -Wl,--whole-archive CMakeFiles\visitaVirtual.dir/objects.a -Wl,--no-whole-archive -o visitaVirtual.exe -Wl,--out-implib,libvisitaVirtual.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\visitaVirtual.dir\linkLibs.rsp
