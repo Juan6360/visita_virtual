@@ -1,0 +1,3 @@
+C:/Users/Juan David/Desktop/visita_virtual/cmake-build-debug/CMakeFiles/visita_virtual.dir
+C:/Users/Juan David/Desktop/visita_virtual/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Juan David/Desktop/visita_virtual/cmake-build-debug/CMakeFiles/rebuild_cache.dir
