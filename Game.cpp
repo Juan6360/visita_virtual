@@ -30,11 +30,10 @@ void Game::initText() {
 
     sf::Vector2<unsigned int> windowSize = this->window->getSize();
 
-    this->uiText.setPosition(3 * ((float)windowSize.x/3), 490.f);
+    this->uiText.setPosition(40.f, 3 * ((float) windowSize.y/4));
     this->uiText.setFont(this->font);
     this->uiText.setCharacterSize(30);
     this->uiText.setFillColor(sf::Color(86, 86, 86));
-    this->uiText.setString("none");
 }
 
 void Game::initBox() {
